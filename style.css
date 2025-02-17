@@ -315,10 +315,24 @@ footer {
   #story-1 {
     height: 2850px;
   }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: center;
+    margin-right: 20px;
+  }
 }
 @media (min-width: 374px) and (max-width: 454px) {
   #story-1 {
     height: 2800px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 20px;
   }
 }
 @media (max-width: 768px) {
