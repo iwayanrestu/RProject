@@ -281,7 +281,7 @@ footer {
 }
 
 /*responsive*/
-@media (min-width: 400px) and (max-width: 550px) {
+@media (min-width: 300px) and (max-width: 550px) {
   .card {
     border-radius: 40px;
     padding: 20px;
@@ -297,8 +297,26 @@ footer {
     border-radius: 20px;
   }
 }
-
-@media (min-width: 400px) and (max-width: 454px) {
+@media (min-width: 300px) and (max-width: 374px) {
+  .card {
+    border-radius: 40px;
+    padding: 20px;
+    border: 5px solid rgb(247, 142, 124);
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img-top {
+    width: 100px;
+    border-radius: 20px;
+  }
+  #story-1 {
+    height: 2850px;
+  }
+}
+@media (min-width: 374px) and (max-width: 454px) {
   #story-1 {
     height: 2800px;
   }
