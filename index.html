@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -100,54 +99,29 @@ Bagi aku setiap saat sm kamu itu valentine sih karena setiap hari sama kamu, aku
       </section>
       <section id="gallery">
         <h1 class="padding"></h1>
-        <h1 class="gallery-title">Gallery</h1>
-
-        <div class="wrapper-2">
-          <div class="wrapper-3">
-            <div class="wrapper">
-              <div class="slides">
-                <span id="slide-1"></span>
-                <span id="slide-2"></span>
-                <span id="slide-3"></span>
-                <span id="slide-4"></span>
-                <div class="image">
-                  <img src="./img/foto1.jpg" alt="" />
-                  <img src="./img/foto2.jpg" alt="" />
-                  <img src="./img/foto3.jpg" alt="" />
-                  <img src="./img/foto4.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="navigasi">
-              <a href="#slide-1">1</a>
-              <a href="#slide-2">2</a>
-              <a href="#slide-3">3</a>
-              <a href="#slide-4">4</a>
-            </div>
+        <h1 class="gallery-title">Gallery</h1>  
+        <div class="slider-container first-slider">
+          <div class="slider">
+            <div class="slide"><img src="./img/foto1.jpg" alt="Gambar 1"></div>
+            <div class="slide"><img src="./img/foto2.jpg" alt="Gambar 2"></div>
+            <div class="slide"><img src="./img/foto3.jpg" alt="Gambar 3"></div>
+            <div class="slide"><img src="./img/foto4.jpg" alt="Gambar 4"></div>
           </div>
-          <div class="wrapper-4">
-            <div class="wrapper">
-              <div class="slides">
-                <span id="slide-5"></span>
-                <span id="slide-6"></span>
-                <span id="slide-7"></span>
-                <span id="slide-8"></span>
-                <div class="image">
-                  <img src="./img/foto5.jpg" alt="" />
-                  <img src="./img/foto6.jpg" alt="" />
-                  <img src="./img/foto7.jpg" alt="" />
-                  <img src="./img/foto8.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="navigasi">
-              <a href="#slide-5">1</a>
-              <a href="#slide-6">2</a>
-              <a href="#slide-7">3</a>
-              <a href="#slide-8">4</a>
-            </div>
-          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
+        
+        <div class="slider-container second-slider">
+          <div class="slider">
+            <div class="slide"><img src="./img/foto5.jpg" alt="Gambar 5"></div>
+            <div class="slide"><img src="./img/foto6.jpg" alt="Gambar 6"></div>
+            <div class="slide"><img src="./img/foto7.jpg" alt="Gambar 7"></div>
+            <div class="slide"><img src="./img/foto8.jpg" alt="Gambar 8"></div>
+          </div>
+          <button class="prev" onclick="prevSlideSecond()">&#10094;</button>
+          <button class="next" onclick="nextSlideSecond()">&#10095;</button>
+        </div>
+        
       </section>
     <footer>
       <div class="footer-container">
@@ -172,5 +146,6 @@ Bagi aku setiap saat sm kamu itu valentine sih karena setiap hari sama kamu, aku
         <p>&copy; 2025 RProject | Made with ❤️</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
