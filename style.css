@@ -291,12 +291,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 400px;
+    overflow: auto;
   }
   .card-img-top {
     width: 100px;
     border-radius: 20px;
   }
 }
+
 @media (min-width: 300px) and (max-width: 374px) {
   .card {
     border-radius: 40px;
@@ -313,7 +316,7 @@ footer {
     border-radius: 20px;
   }
   #story-1 {
-    height: 2850px;
+    height: 1600px;
   }
   ul {
     display: flex;
@@ -325,7 +328,7 @@ footer {
 }
 @media (min-width: 374px) and (max-width: 454px) {
   #story-1 {
-    height: 2800px;
+    height: 1500px;
   }
   ul {
     display: flex;
@@ -341,20 +344,25 @@ footer {
     text-align: center;
   }
 }
-@media (min-width: 454px) and (max-width: 580px) {
+@media (min-width: 454px) and (max-width: 550px) {
   #story-1 {
-    height: 2700px;
+    height: 1400px;
+  }
+}
+@media (min-width: 551px) and (max-width: 580px) {
+  #story-1 {
+    height: 2300px;
   }
 }
 @media (min-width: 581px) and (max-width: 669px) {
   #story-1 {
-    height: 2300px;
+    height: 2100px;
   }
 }
 
 @media (min-width: 669px) and (max-width: 909px) {
   #story-1 {
-    height: 1800px;
+    height: 1900px;
   }
 }
 @media (min-width: 909px) and (max-width: 1720px) {
