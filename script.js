@@ -44,3 +44,11 @@ function prevSlideSecond() {
 
 // Auto slide every 3 seconds for the second slider
 setInterval(nextSlideSecond, 3000);
+
+function toggleMenu() {
+  const navMenu = document.getElementById("nav-menu");
+  const hamburger = document.querySelector(".hamburger");
+
+  navMenu.classList.toggle("show");
+  hamburger.classList.toggle("open");
+}
